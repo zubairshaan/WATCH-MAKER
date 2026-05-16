@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="6" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zubair Luxury Watch Engineering | Riyadh</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --surface-color: #161b22;
+            --gold: #c5a059;
+            --text-main: #f0f6fc;
+            --text-muted: #8b949e;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+        
+        header { border-bottom: 1px solid #21262d; padding: 30px 0; text-align: center; }
+        .logo { color: var(--gold); font-size: 28px; font-weight: bold; letter-spacing: 2px; }
+        .subtitle { color: var(--text-muted); font-size: 14px; margin-top: 5px; text-transform: uppercase; }
+
+        .lang-toggle { display: inline-block; margin-top: 15px; background: none; border: 1px solid var(--gold); color: var(--gold); padding: 5px 15px; cursor: pointer; border-radius: 4px; }
+
+        .hero { text-align: center; padding: 60px 0; border-bottom: 1px solid #21262d; }
+        .hero h1 { font-size: 36px; margin-bottom: 20px; color: var(--text-main); }
+        .hero p { max-width: 700px; margin: 0 auto 30px; color: var(--text-muted); font-size: 18px; }
+
+        .cta-buttons { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 12px 30px; font-weight: bold; text-decoration: none; border-radius: 4px; transition: 0.3s; text-align: center; }
+        .btn-gold { background-color: var(--gold); color: var(--bg-color); }
+        .btn-gold:hover { background-color: #e2b969; }
+        .btn-outline { border: 1px solid var(--text-muted); color: var(--text-main); }
+        .btn-outline:hover { background-color: #21262d; }
+
+        .section-title { text-align: center; color: var(--gold); margin: 50px 0 30px; font-size: 24px; text-transform: uppercase; letter-spacing: 1px; }
+
+        .table-container { overflow-x: auto; background-color: var(--surface-color); border: 1px solid #30363d; border-radius: 8px; margin-bottom: 5px; }
+        table { width: 100%; border-collapse: collapse; text-align: left; }
+        th, td { padding: 15px 20px; border-bottom: 1px solid #30363d; }
+        th { background-color: #21262d; color: var(--gold); font-weight: 600; }
+        tr:last-child td { border-bottom: none; }
+        .highlight-price { color: #58a6ff; font-weight: bold; }
+        .your-price { color: #3fb950; font-weight: bold; }
+
+        .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 5px; }
+        .step-card { background-color: var(--surface-color); padding: 25px; border-radius: 8px; border: 1px solid #30363d; text-align: center; }
+        .step-num { font-size: 32px; color: var(--gold); font-weight: bold; margin-bottom: 10px; }
+        .step-card h3 { margin-bottom: 10px; font-size: 18px; }
+        .step-card p { color: var(--text-muted); font-size: 14px; }
+
+        footer { text-align: center; padding: 40px 0; color: var(--text-muted); border-top: 1px solid #21262d; font-size: 14px; }
+
+        /* RTL Alignment Styles for Arabic */
+        .rtl { direction: rtl; text-align: right; }
+        .rtl table { text-align: right; }
+        .rtl .step-card { text-align: center; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">ZUBAIR HOROLOGY</div>
+            <div class="subtitle" id="sub-title">12+ Years Precision Swiss Maintenance | Riyadh</div>
+            <button class="lang-toggle" onclick="toggleLanguage()">العربية</button>
+        </div>
+    </header>
+
+    <div class="container" id="main-content">
+        <section class="hero">
+            <h1>Premium Watch Repair Straight To Your Door</h1>
+            <p>Skip Riyadh's heavy showroom traffic. Get elite mall-quality battery diagnostics, glass replacements, and structural overhauls performed cleanly inside your home or via secure courier transit.</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/966503320680?text=Hi%20Zubair,%20I%20want%20to%20book%20a%20VIP%20watch%20repair%20service." class="btn btn-gold" target="_blank">Book Home Pickup</a>
+                <a href="#mail-guide" class="btn btn-outline">Mail-In Instructions</a>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Riyadh Price Comparison Dashboard</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Watch Category / Service Type</th>
+                            <th>Traditional Mall Shops</th>
+                            <th>Our Mobile/Mail Price</th>
+                            <th>Turnaround Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Japanese Quartz (Seiko, Citizen, Casio)</strong><br><small>Battery replacement + complete case detailing</small></td>
+                            <td>300 - 350 SAR</td>
+                            <td class="your-price">200 SAR</td>
+                            <td>Same Day</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Entry Luxury Automatic (Tissot, Hamilton, Longines)</strong><br><small>Caliber diagnostic, movement calibration & seals</small></td>
+                            <td>600 - 800 SAR</td>
+                            <td class="your-price">400 SAR</td>
+                            <td>24 - 48 Hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>High Luxury Mechanical (Rolex, Omega, Cartier)</strong><br><small>Complete component overhaul & sonic ultrasonic bath</small></td>
+                            <td>2,500+ SAR</td>
+                            <td class="your-price">From 900 SAR</td>
+                            <td>3 - 5 Days</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="mail-guide">
+            <h2 class="section-title">Secure Mail-In Process (Outside Riyadh)</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-num">01</div>
+                    <h3>Secure Wrap</h3>
+                    <p>Wrap your watch safely in layers of bubble wrap. Place it into an unbranded cardboard box for security.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">02</div>
+                    <h3>Ship via SPL</h3>
+                    <p>Send your shipment to Riyadh via SPL/Aramex. Message us your trackable tracking number right away.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">03</div>
+                    <h3>Video Intake</h3>
+                    <p>We record a continuous live unboxing video the exact second your item arrives safely at our diagnostics station.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">04</div>
+                    <h3>Insured Return</h3>
+                    <p>Once expertly repaired, your watch is hand-packed and securely couriered back directly to your coordinates.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Zubair Horology. Riyadh, Kingdom of Saudi Arabia. Freelance Document Certified.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth bilingual switching layer using raw JS data arrays
+        let currentLang = 'en';
+        
+        const contents = {
+            en: {
+                subtitle: "12+ Years Precision Swiss Maintenance | Riyadh",
+                btnText: "العربية",
+                html: `
+                    <section class="hero">
+                        <h1>Premium Watch Repair Straight To Your Door</h1>
+                        <p>Skip Riyadh's heavy showroom traffic. Get elite mall-quality battery diagnostics, glass replacements, and structural overhauls performed cleanly inside your home or via secure courier transit.</p>
+                        <div class="cta-buttons">
+                            <a href="https://wa.me/966503320680?text=Hi%20Zubair,%20I%20want%20to%20book%20a%20VIP%20watch%20repair%20service." class="btn btn-gold" target="_blank">Book Home Pickup</a>
+                            <a href="#mail-guide" class="btn btn-outline">Mail-In Instructions</a>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title">Riyadh Price Comparison Dashboard</h2>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Watch Category / Service Type</th>
+                                        <th>Traditional Mall Shops</th>
+                                        <th>Our Mobile/Mail Price</th>
+                                        <th>Turnaround Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Japanese Quartz (Seiko, Citizen, Casio)</strong><br><small>Battery replacement + complete case detailing</small></td>
+                                        <td>300 - 350 SAR</td>
+                                        <td class="your-price">200 SAR</td>
+                                        <td>Same Day</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Entry Luxury Automatic (Tissot, Hamilton, Longines)</strong><br><small>Caliber diagnostic, movement calibration & seals</small></td>
+                                        <td>600 - 800 SAR</td>
+                                        <td class="your-price">400 SAR</td>
+                                        <td>24 - 48 Hours</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>High Luxury Mechanical (Rolex, Omega, Cartier)</strong><br><small>Complete component overhaul & sonic ultrasonic bath</small></td>
+                                        <td>2,500+ SAR</td>
+                                        <td class="your-price">From 900 SAR</td>
+                                        <td>3 - 5 Days</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section id="mail-guide">
+                        <h2 class="section-title">Secure Mail-In Process (Outside Riyadh)</h2>
+                        <div class="steps-grid">
+                            <div class="step-card">
+                                <div class="step-num">01</div>
+                                <h3>Secure Wrap</h3>
+                                <p>Wrap your watch safely in layers of bubble wrap. Place it into an unbranded cardboard box for security.</p>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">02</div>
+                                <h3>Ship via SPL</h3>
+                                <p>Send your shipment to Riyadh via SPL/Aramex. Message us your trackable tracking number right away.</p>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">03</div>
+                                <h3>Video Intake</h3>
+                                <p>We record a continuous live unboxing video the exact second your item arrives safely at our diagnostics station.</p>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">04</div>
+                                <h3>Insured Return</h3>
+                                <p>Once expertly repaired, your watch is hand-packed and securely couriered back directly to your coordinates.</p>
+                            </div>
+                        </div>
+                    </section>`
+            },
+            ar: {
+                subtitle: "أكثر من 12 عاماً من الخبرة في صيانة الساعات الفاخرة | الرياض",
+                btnText: "English",
+                html: `
+                    <section class="hero">
+                        <h1>صيانة الساعات الفاخرة مباشرة من منزلك</h1>
+                        <p>تجنب زحام صالات العرض بالرياض. احصل على جودة فحص وصيانة عالية لمعايرة المحركات، تغيير البطاريات والأجزاء الهيكلية، إما داخل مجلسك أو عبر خيارات الشحن الآمن والموثق.</p>
+                        <div class="cta-buttons">
+                            <a href="https://wa.me/966503320680?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%B2%D8%A8%D9%8A%D8%B1%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B5%D9%8a%D8%A7%D9%86%D8%A9%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D9%85%D9%86%20%D8%A7%D9%84%D9%85%D9%86%D8%B2%D9%84." class="btn btn-gold" target="_blank">احجز خدمة الاستلام المنزلي</a>
+                            <a href="#mail-guide" class="btn btn-outline">دليل إرسال الساعة بالشحن</a>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title">لوحة مقارنة الأسعار في الرياض</h2>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>فئة الساعة / نوع الخدمة</th>
+                                        <th>المحلات التقليدية في المولات</th>
+                                        <th>أسعار خدمتنا المنزلية والشحن</th>
+                                        <th>مدة التنفيذ الإجمالية</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>الساعات اليابانية (سيكو، سيتيزن، كاسيو)</strong><br><small>تغيير بطارية أصلية وعزل ضد الماء + تنظيف كامل للهيكل</small></td>
+                                        <td>300 - 350 ريال</td>
+                                        <td class="your-price">200 ريال</td>
+                                        <td>نفس اليوم</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>الساعات الفاخرة المتوسطة (تيسو، هاميلتون، لونجين)</strong><br><small>فحص المحرك الميكانيكي، ضبط دقة توقيت الكاليبر واستبدال الجلود</small></td>
+                                        <td>600 - 800 ريال</td>
+                                        <td class="your-price">400 ريال</td>
+                                        <td>24 - 48 ساعة</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>الساعات الفاخرة العالية (رولكس، أوميغا، كارتييه)</strong><br><small>تفكيك وصيانة ميكانيكية شاملة مع غسيل الأجزاء بالموجات فوق الصوتية</small></td>
+                                        <td>2,500+ ريال</td>
+                                        <td class="your-price">تبدأ من 900 ريال</td>
+                                        <td>3 - 5 أيام</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section id="mail-guide">
+                        <h2 class="section-title">خطوات الصيانة عبر الشحن (خارج الرياض)</h2>
+                        <div class="steps-grid">
+                            <div class="step-card">
+                                <div class="step-num">01</div>
+                                <h3>التغليف المحمي</h3>
+                                <p>قم بتغليف الساعة جيداً باستخدام رول الفقاعات البلاستيكي وضعها في صندوق كرتوني سادة تماماً لدواعي الأمان والخصوصية.</p>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">02</div>
+                                <h3>الشحن عبر البريد السعودي</h3>
+                                <p>أرسل الطرد عبر سبل أو أرامكس إلى عنواننا بالرياض، وزودنا برقم التتبع مباشرة عبر الواتساب.</p>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">03</div>
+                                <h3>توثيق وصول الطرد بالفيديو</h3>
+                                <p>نقوم بتصوير فيديو مستمر دون انقطاع لحظة فتح الصندوق للتأكد من حالة الساعة ومطابقتها التامة أمام العميل قبل الفحص.</p>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">04</div>
+                                <h3>الإعادة الآمنة والمؤمنة</h3>
+                                <p>بعد إتمام الصيانة بدقة، تُغلف الساعة في عبوة فاخرة لحمايتها وتشحن مباشرة مؤمنة بالكامل إلى إحداثيات موقعك.</p>
+                            </div>
+                        </div>
+                    </section>`
+            }
+        };
+
+        function toggleLanguage() {
+            const body = document.body;
+            const subTitle = document.getElementById('sub-title');
+            const mainContent = document.getElementById('main-content');
+            const btn = document.querySelector('.lang-toggle');
+
+            if (currentLang === 'en') {
+                currentLang = 'ar';
+                body.classList.add('rtl');
+                subTitle.innerText = contents.ar.subtitle;
+                mainContent.innerHTML = contents.ar.html;
+                btn.innerText = contents.ar.btnText;
+            } else {
+                currentLang = 'en';
+                body.classList.remove('rtl');
+                subTitle.innerText = contents.en.subtitle;
+                mainContent.innerHTML = contents.en.html;
+                btn.innerText = contents.en.btnText;
+            }
+        }
+    </script>
+</body>
+</html>
